@@ -42,8 +42,21 @@ p {
 	background: url("../images/background.jpg") no-repeat center center/cover;
 }
 
+.showcase::after {
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
 .showcase-top {
 	height: 90px;
+	z-index: 2;
 	position: relative;
 }
 .showcase-top img {
@@ -60,6 +73,31 @@ p {
 	top: 50%;
 	right: 0;
 	transform: translate(-50%, -50%);
+}
+.showcase-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 7rem;
+}
+
+.showcase-content h1 {
+	font-weight: 700;
+	font-size: 4rem;
+	line-height: 1.1;
+	margin: 0 0 2rem;
+}
+.showcase-content p {
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin: 0 0 2rem;
+	text-transform: uppercase;
+	line-height: 1.25;
+	color: #fff;
 }
 
 /* Buttons */
@@ -86,7 +124,7 @@ p {
 }
 
 .btn-xl {
-	font-size: 1rem;
+	font-size: 1.4rem;
 	padding: 1.5rem 2.1rem;
 	text-transform: uppercase;
 }

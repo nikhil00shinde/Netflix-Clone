@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- In this we are creating form  -->
+		<h1>This is HTML form</h1>
+		<form action="backend.php">
+			<label for="name">Name</label>
+			<div><input type="text" name="myName" id="name" /></div>
+			<br />
+
+			<div>Role: <input type="text" name="myRole" /></div>
+			<br />
+
+			<div>
+				<!-- backend ko batane kya cheej kya hain esliye hum use karte name attribute -->
+				Email: <input type="email" name="myEmail" />
+			</div>
+			<br />
+
+			<div>Date: <input type="date" name="myDate" /></div>
+			<br />
+
+			<div>Bonus: <input type="number" name="myBonus" /></div>
+			<br />
+
+			<div>
+				<!-- agar hum by default chahte hain ki checkbox checked ho hamesha toh "checked" attribute lagaye -->
+				Are you eligible: <input type="checkbox" name="myEligibility" checked />
+			</div>
+			<br />
+
+			<div>
+				<!-- agar radio input element mei attribute ka name same ho toh hum koi ek hi select kar payenge -->
+				Gender: Male <input type="radio" name="myGender" id="" /> Female
+				<input type="radio" name="myGender" id="" />
+			</div>
+			<br />
+
+			<div>
+				Write about yourself: <br />
+				<textarea name="myText" id="" cols="30" rows="10"></textarea>
+			</div>
+			<br />
+
+			<div>
+				<!-- Select tag se hum koi item select kar sakte hain agar by default koi chahiye hain toh selected add kardo us option mei -->
+				<label for="car">Car</label>
+				<select name="myCar" id="car">
+					<option value="ind">Indica</option>
+					<option value="swift" selected>Swift</option>
+				</select>
+			</div>
+
+			<br />
+			<input type="submit" value="submit now" />
+			<input type="reset" value="Reset Now" />
+			<br />
+		</form>
+	</body>
+</html>
